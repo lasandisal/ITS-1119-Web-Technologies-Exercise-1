@@ -10,7 +10,6 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== FIXED BACKGROUND CIRCLES ===== */
 .border-container {
     position: fixed;
     top: 50%;
@@ -41,18 +40,15 @@ body {
     border-radius: 50%;
 }
 
-/* ===== SCROLL CONTENT ===== */
 .content-wrapper {
     position: relative;
     z-index: 2; 
 }
 
-/* Each circle section takes full screen */
 .scroll-area {
     width: 100%;
 }
 
-/* Each circle container takes 100vh */
 .circle-section {
     height: 100vh;
     display: flex;
@@ -60,7 +56,6 @@ body {
     align-items: center;
 }
 
-/* Main Circle */
 .main-circle {
     width: 260px;
     height: 260px;
