@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+/* ===== FIXED BACKGROUND CIRCLES ===== */
+.border-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+}
+
+.gray-border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    height: 340px;
+    background-color: #b59a8d;
+    border-radius: 50%;
+}
+
+.red-border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background-color: #ff0000;
+    border-radius: 50%;
+}
+
+/* ===== SCROLL CONTENT ===== */
+.content-wrapper {
+    position: relative;
+    z-index: 2; 
+}
+
+/* Each circle section takes full screen */
+.scroll-area {
+    width: 100%;
+}
+
+/* Each circle container takes 100vh */
+.circle-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Circle */
+.main-circle {
+    width: 260px;
+    height: 260px;
+    background-color: #913175;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}

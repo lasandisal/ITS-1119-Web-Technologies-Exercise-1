@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%; 
+    min-height: 100vh;
+    position: relative;
+    display: block;
+}
+
+header {
+    height: 80px;
+    border-bottom: 2px solid #000;
+    position: relative;
+    width: 100%;
+}
+
+.logo img {
+    height: 40px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.top-nav {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+.top-nav ul li {
+    display: inline;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #550080;
+    padding: 30px 20px;
+    position: absolute; 
+    top: 0;
+    bottom: 0; 
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    color: white;
+    padding: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content-area {
+    margin-left: 200px; 
+    padding: 20px;
+    border-left: 1px solid #000;
+    min-height: calc(100vh - 120px); 
+}
+
+.video-row {
+    height: 300px;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.box {
+    width: 32%; 
+    height: 100%;
+    border: 1px solid green;
+    background-color: #eee;
+    float: left;
+    margin-right: 2%;
+    position: relative;
+}
+
+.box:last-child {
+    margin-right: 0;
+}
+
+.box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.text-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #888;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    width: 100%;
+    clear: both;
+}
