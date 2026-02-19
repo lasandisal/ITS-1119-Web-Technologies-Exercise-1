@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.red { background: #ff1a1a; }
+.green { background: green; }
+.orange { background: #ff4500; }
+.purple { background: purple; }
+
+.pink { background: #ff1493; }
+.blue { background: blue; }
+.brown { background: brown; }
+.light-purple { background: orchid; }
+
+.dark-purple { background: indigo; }
+.yellow { background: gold; }
+.teal { background: cadetblue; }
+.cyan { background: darkturquoise; }
