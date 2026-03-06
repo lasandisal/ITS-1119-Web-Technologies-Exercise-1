@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body, html{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.slider{
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    position:relative;
+}
+
+.slides{
+    display:flex;
+    width:400%; /* 4 images */
+    height:100%;
+    animation: slideAnim 10s linear infinite alternate;
+}
+
+.slides img{
+    width:25%; /* each image takes full viewport width */
+    height:100%;
+    object-fit:cover;
+}
+
+/* Keyframes for sliding with pauses */
+@keyframes slideAnim{
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }      /* pause first image */
+    
+    25% { transform: translateX(-25%); }   /* move to 2nd image */
+    45% { transform: translateX(-25%); }   /* pause 2nd image */
+    
+    50% { transform: translateX(-50%); }   /* move to 3rd image */
+    70% { transform: translateX(-50%); }   /* pause 3rd image */
+    
+    75% { transform: translateX(-75%); }   /* move to 4th image */
+    95% { transform: translateX(-75%); }   /* pause 4th image */
+    
+    100% { transform: translateX(-75%); }  /* end */
+}

@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#160bb5;
+}
+
+.main-circle{
+    position:relative;
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: white;
+}
+
+/* rotating arc */
+.arc{
+    position:absolute;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    border:12px solid transparent;
+    border-top:12px solid red;
+
+    transition: transform 1s ease;
+}
+
+.main-circle:hover .arc{
+    transform:rotate(360deg);
+}
+
+/* inner circle */
+.inner-circle{
+    width:226px;
+    height:226px;
+    border-radius:50%;
+    background:rgb(108, 99, 99);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    font-weight:bold;
+    color:white;
+}
